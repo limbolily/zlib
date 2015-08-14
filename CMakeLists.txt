@@ -240,7 +240,7 @@ yong_add_library_end(zlib)
 #        LIBRARY DESTINATION "${INSTALL_LIB_DIR}" )
 #endif()
 if(NOT SKIP_INSTALL_HEADERS AND NOT SKIP_INSTALL_ALL )
-  yong_install_header_files(zlib ${ZLIB_PUBLIC_HDRS})
+  yong_install_header_files(zlib "" ${ZLIB_PUBLIC_HDRS})
 #    install(FILES ${ZLIB_PUBLIC_HDRS} DESTINATION "${INSTALL_INC_DIR}")
 endif()
 
